@@ -2,8 +2,21 @@
   "defaultCommand": "vars",
   "commands": {
     "vars": {
-      "scriptType": "node",
-      "scriptPath": "index.js",
+      "run": "node",
+      "path": "index.js",
+      "vars": {
+        "name": {
+          "default": "Keith",
+          "persist": true
+        },
+        "phrase": {
+          "persist": false,
+          "default": "Hello there!"
+        }
+      },
+    "hello": {
+      "run": "node",
+      "path": "index.js",
       "vars": {
         "name": {
           "default": "Keith",
